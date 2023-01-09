@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     ssl: true,
-    sslValidate: true,
+    sslValidate: false,
 }).then(() => {
     console.log("DBと接続中")
 }).catch((err) => {
